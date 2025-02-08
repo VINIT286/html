@@ -1,0 +1,88 @@
+/* div{
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 50px;
+    font-size: larger;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+/* .threenav{
+    display: flex;
+    justify-content: space-between;
+
+} */
+
+
+ .threenav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    
+}
+.list{
+    display: flex;
+    color: black;
+    font-size: small;
+    padding-right: 100px;
+}
+
+.photo{
+    width: 200px;
+    padding-left: 80px;
+}
+
+#box{
+   color: black;
+   background-color: aqua;
+   padding: 8px 20px;
+   margin-right: 90px;
+   border-radius: 10px;
+
+
+
+    
+} 
+
+.a{
+    font-size: 50px;
+}
+
+.b{
+    font-size: 20px;
+}
+.c{
+   font-size: 15px; 
+   color: white;
+   background-color: aqua;
+   margin-right: 90%;
+   border-radius: 10px;
+   padding: 10px;
+}
+
+.parent{
+    padding: 100px 100px 100px 100px;
+}
+
+.image{
+    width: 160px;
+}
+
+.inline{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.p{
+    font-size: 30px;
+    text-align: center;
+    color: blue;
+}
+.h{
+    font-size: 20px;
+    text-align: center;
+}
