@@ -2,6 +2,10 @@
     margin: 0px;
     padding: 0px;
 }
+
+html,body{
+    overflow-x: hidden;
+}
 .logo{
     width: 150px;
 }
@@ -15,7 +19,11 @@
     color: white;  
     align-items: center; 
     font-size: larger;
+    overflow-x: hidden;
 
+}
+.first:hover{
+    cursor: pointer;
 }
 .first a{
     margin-right: 60px;
@@ -30,7 +38,12 @@
     top: 40px;
     background-color: white;
     height: 60px;
+    overflow-x: hidden;
+
     
+}
+.nav:hover{
+    cursor: pointer;
 }
 
 .prax{
@@ -55,6 +68,7 @@
     padding-bottom: 9px;
 }
 .box:hover{
+    cursor: pointer;
     font-size: 26px;    
 }
 .parent{
@@ -96,12 +110,41 @@
     justify-content: center;
     align-items: center;
 }
+
+
+
 .inline{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
 }
+
+.inline article{
+    margin: 10px;
+}
+
+@media(max-width:769px){
+    .inline{
+       display: grid;
+       grid-template-columns: auto auto auto;
+    }
+}
+
+@media(max-width:430px){
+    .inline{
+       display: grid;
+       grid-template-columns: auto auto;
+    }
+}
+@media(max-width:321px){
+    .inline{
+        display: grid;
+        grid-template-columns: auto;
+     }
+}
+
+
 .p{
     font-size: 30px;
     text-align: center;
@@ -127,6 +170,7 @@
     font-size: 30px;
 } 
 .box1:hover{
+    cursor: pointer;
     width:360px;
     height: 510px;
 }
@@ -147,6 +191,7 @@
 }
 .box2:hover{
     width:360px;
+    cursor: pointer;
     height: 510px;
 }
  .box3{
@@ -172,6 +217,28 @@
     justify-content:center;
     grid-template-columns: auto auto auto;
 }
+
+@media(max-width:1025px){
+   .box1,.box2,.box3{
+    width: 300px;
+   }
+}
+
+@media(max-width:769px){
+    .img{
+        display: grid;
+        justify-content:center;
+        grid-template-columns: auto auto;
+    }
+ }
+
+ @media(max-width:431px){
+    .img{
+        display: grid;
+        justify-content:center;
+        grid-template-columns: auto;
+    }
+ }
 .next{
     text-align: center;
     background-color: rgb(10, 80, 134);
@@ -206,6 +273,7 @@
     font-size: 30px;
 } 
 .d1:hover{
+    cursor: pointer;
     width: 210px;
     height: 260px;
 }
@@ -224,6 +292,7 @@
     font-size: 30px;
 }
 .d2:hover{
+    cursor: pointer;
     width: 210px;
     height: 310px;
 }
@@ -366,25 +435,36 @@
     display: flex;
 }
 .user{
+    display: flex;
     background-color:rgb(10, 80, 134);
     height: 700px;
-}
-.real{
-    width: 800px;
-    height: 500px;
-}
-.real:hover{
-    padding-left: 150px;
-}
-.user1{
-    color: white;
-    padding-left: 700px;
-    font-size: 50px;
-    padding-top: 50px;
-    text-align:center;
-    padding-bottom: 50px
+    justify-content: space-between;
     
 }
+.real{
+    width: 600px;
+    height: 660px;
+    padding-top: 40px;
+}
+.real:hover{
+    padding-left: 100px;
+}
+.boo{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRQZfjMhPe6MoNeQvGaN8sM5CVjiJi6CAAlw&s");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 450px;
+    width: 300px;
+    border-radius: 15px;
+    background-color:white ;
+    text-align: center;
+    margin-top: 150px;
+    margin-right: 200px;
+    color: white;
+    border: 5px solid white;
+}
+
 .px{
     width: 200px;
 }
