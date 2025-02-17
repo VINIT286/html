@@ -19,12 +19,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: small;
-    
+    font-size: xx-large;
+    color: goldenrod;
+    margin: 20PX;
+    position:fixed;
+    top: 20px;
 }
 .list{
     display: flex;
-    color: black;
+    color:white;
     font-size: small;
     padding-right: 100px;
 }
@@ -36,27 +39,26 @@
 
 #box{
    color: black;
-   background-color: aqua;
+   background-color:greenyellow;
    padding: 8px 20px;
    margin-right: 90px;
    border-radius: 10px;
-
-
-
     
 } 
 
 .a{
     font-size: 50px;
+    color: aliceblue;
 }
 
 .b{
     font-size: 20px;
+    color: aliceblue;
 }
 .c{
    font-size: 15px; 
-   color: white;
-   background-color: aqua;
+   color:black;
+   background-color: greenyellow;
    margin-right: 90%;
    border-radius: 10px;
    padding: 10px;
@@ -80,9 +82,29 @@
 .p{
     font-size: 30px;
     text-align: center;
-    color: blue;
+    color:black;
 }
 .h{
     font-size: 20px;
     text-align: center;
+}
+.vid{
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    z-index: -1;
+    height: 600px;
+    overflow: hidden;
+}
+.Q{
+    background-color: yellowgreen;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    position: sticky;
+    top: 200px;
+    
+
 }

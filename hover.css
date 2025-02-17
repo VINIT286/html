@@ -1,0 +1,21 @@
+*::selection{
+    color: yellowgreen  ;
+    background-color: blueviolet;
+}
+.big{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+.big:hover{
+   box-shadow: 20px 20px 50px 50px royalblue;
+   transition: 5s;
+   height: 300px;
+    width: 300px;
+}
+.big::after{
+    content: "+";
+}p
+.big::before{
+    content: "==" ;
+}
