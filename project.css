@@ -3,7 +3,9 @@
     padding: 0px;
 }
 
-html,body{
+html, body {
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 .logo{
@@ -14,7 +16,8 @@ html,body{
     background-color: rgb(10, 80, 134);
     justify-content: end;
     padding: 10px;
-    position:sticky; 
+    position:fixed; 
+    width: 100%;
     top: 0px;
     color: white;  
     align-items: center; 
@@ -24,13 +27,13 @@ html,body{
 .first:hover{
     cursor: pointer;
 }
-@media(max-width:321px){
+@media(max-width:426px){
     .first{
       display: none;
     }
    
-}
-@media(max-width:426px){
+} 
+@media(max-width:321px){
     .first{
       display: none;
     }
@@ -45,8 +48,9 @@ html,body{
     align-items: center;
     font-size:30px;
     color: black;
-    position: sticky;
-    top: 0px;
+    position: fixed;
+    top: 41px;
+    width: 100%;
     background-color: white;
     height: 60px;
     overflow-x: hidden;
@@ -54,11 +58,13 @@ html,body{
 .nav:hover{
     cursor: pointer;
 }
-@media(max-width:321px){
+@media(max-width:426px){
     .nav{
       display: block;
       text-align: center;
-      margin-left: 5px;
+      margin-left: 0%;
+      padding-left: 70px;
+      top: 0;
     }
    
 }
@@ -67,18 +73,16 @@ html,body{
       display: block;
       text-align: center;
       margin-left: 0px;
-      padding-left: 300px;
+      text-align: center;
       justify-content: end;
-      position: sticky;
-    }
-   
+      position: fixed;
+    }  
 }
-@media(max-width:426px){
+@media(max-width:321px){
     .nav{
       display: block;
       text-align: center;
-      margin-left: 0%;
-      padding-left: 70px;
+      
     }
    
 }
@@ -108,7 +112,7 @@ html,body{
     font-size: 26px;    
 }
 .parent{
-    padding: 100px 100px 100px 100px;
+    padding: 150px 100px 100px 100px;
 }
 @media(max-width:321px){
     .parent{
@@ -188,17 +192,17 @@ html,body{
 }
  
  .vid{
-    position: absolute;
-    width: 100%;
+    position:absolute;
     top: 0%;
+    width: 100%;
     z-index: -1;
-    height: 550px;
+    height: 490px;
     overflow: hidden;
+    
 }
-@media(max-width:376px){
+ @media(max-width:1025px){
     .vid{
-        display: flex;
-        height: 10px;
+        width:100%;
     }
    
 }
@@ -208,6 +212,18 @@ html,body{
     }
    
 }
+@media(max-width:376px){
+    .vid{
+        height: 700px;
+    }
+   
+} 
+@media(max-width:321px){
+    .vid{
+        height: 600px;
+    }
+   
+} 
 .image{
     width: 160px;
     justify-content: center;
@@ -779,6 +795,8 @@ html,body{
 }
 .vidi{
     margin-bottom: 50px;
+    height: 700px;
+    width: 1450px;
 }
 @media(max-width:321px){
     .vidi{
@@ -792,18 +810,18 @@ html,body{
 }
 @media(max-width:769px){
     .vidi{
-        width:100px;
+        display: none;
+    }
+    
+}
+@media(max-width:1025px){
+    .vidi{
+        width:1120px;
     }
     .d{
         padding-left:250px;
     }
 }
-@media(max-width:1441px){
-    .vidi{
-        width:1450px ;
-    }
-}
-
 .pr{
     width: 600px;
 }
@@ -813,7 +831,9 @@ html,body{
 }
 @media(max-width:321px){
     .pr{
-        width: 100px;  
+        width: 100px; 
+        margin-left: auto;
+        margin-right: auto; 
     }
     .pr:hover{
         display: none;
@@ -848,7 +868,8 @@ html,body{
 @media(max-width:321px){
     .main{
         padding-right: 10px;
-        
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media(max-width:376px){
@@ -874,8 +895,7 @@ html,body{
     display: flex;
     background-color:rgb(10, 80, 134);
     height: 700px;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
 
 .real{
@@ -1057,3 +1077,7 @@ html,body{
     font-size: 20px;
 }
 
+.footer{
+    background-color:rgba(5, 172, 244, 0.144);
+    padding-top: 10px;
+}
